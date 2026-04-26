@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Once Call Services</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
+<style>
+body { margin: 0; font-family: 'Poppins', sans-serif; }
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('1.jpeg') center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+/* NAV BUTTONS */
+.nav-buttons button {
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 25px;
+    border: none;
+    background: #ff4d4d;
+    color: white;
+    cursor: pointer;
+}
+
+/* SECTION */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* CARD */
+.card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    max-width: 900px;
+    margin: auto;
+}
+
+/* SERVICES */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.service-btn {
+    padding: 12px 20px;
+    border-radius: 25px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+/* COLORS */
+.blue { background: #3498db; }
+.green { background: #2ecc71; }
+.orange { background: #e67e22; }
+.red { background: #e74c3c; }
+.purple { background: #9b59b6; }
+.teal { background: #1abc9c; }
+
+.service-btn:hover {
+    transform: scale(1.08);
+}
+
+/* GALLERY */
+.gallery img {
+    width: 200px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* CONTACT BUTTONS */
+.contact-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 25px;
+    border: none;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+    <div>
+        <h1>Once Call Services</h1>
+        <p>Your Trusted Daily Needs Service Platform</p>
+
+        <div class="nav-buttons">
+            <button onclick="scrollToSection('about')">About</button>
+            <button onclick="scrollToSection('services')">Services</button>
+            <button onclick="scrollToSection('why')">Why Us</button>
+            <button onclick="scrollToSection('contact')">Contact</button>
+        </div>
+    </div>
+</div>
+
+<!-- ABOUT -->
+<div id="about" class="section">
+    <div class="card">
+        <h2>About Us</h2>
+        <p>Once Call Services connects people with trusted service providers quickly and easily through one simple call.</p>
+        <p>From emergency needs to daily services, we help customers save time and find reliable professionals.</p>
+    </div>
+</div>
+
+<!-- SERVICES -->
+<div id="services" class="section">
+    <h2>Our Services</h2>
+
+    <div class="services">
+
+        <button class="service-btn blue">Electricians</button>
+        <button class="service-btn green">Plumbers</button>
+        <button class="service-btn orange">Carpenters</button>
+        <button class="service-btn red">AC Repair</button>
+        <button class="service-btn purple">Water Purifier</button>
+        <button class="service-btn teal">House Cleaning</button>
+
+        <button class="service-btn blue">Doctors & Clinics</button>
+        <button class="service-btn green">Hospitals</button>
+        <button class="service-btn orange">Diagnostics</button>
+        <button class="service-btn red">Ambulance</button>
+        <button class="service-btn purple">Home Nursing</button>
+
+        <button class="service-btn teal">Home Tutors</button>
+        <button class="service-btn blue">Coaching Centers</button>
+        <button class="service-btn green">Career Guidance</button>
+
+        <button class="service-btn orange">Real Estate</button>
+        <button class="service-btn red">Legal Services</button>
+        <button class="service-btn purple">Finance</button>
+        <button class="service-btn teal">Insurance</button>
+
+        <button class="service-btn blue">Grocery</button>
+        <button class="service-btn green">Catering</button>
+        <button class="service-btn orange">Events</button>
+        <button class="service-btn red">Travel</button>
+
+    </div>
+</div>
+
+<!-- WHY -->
+<div id="why" class="section">
+    <div class="card">
+        <h2>Why Choose Us</h2>
+        <p>✔ Trusted Local Providers</p>
+        <p>✔ Fast Response</p>
+        <p>✔ One Contact for All Services</p>
+        <p>✔ Affordable & Reliable Solutions</p>
+        <p>✔ Easy WhatsApp & Phone Booking</p>
+    </div>
+</div>
+
+<!-- GALLERY -->
+<div class="section">
+    <h2>Our Work</h2>
+    <div class="gallery">
+        <img src="1.jpeg">
+        <img src="2.jpeg">
+        <img src="3.jpeg">
+        <img src="4.jpeg">
+        <img src="5.jpeg">
+    </div>
+</div>
+
+<!-- CONTACT -->
+<div id="contact" class="section">
+    <div class="card">
+        <h2>Contact Us</h2>
+        <p>📞 +91 8309800936</p>
+        <p>📍 Ramachandrapuram</p>
+
+        <p>🌐 
+        <a href="https://www.oncecallservices.com" target="_blank">
+        www.oncecallservices.com
+        </a>
+        </p>
+
+        <br>
+
+        <a href="tel:+918309800936">
+            <button class="contact-btn">Call Now</button>
+        </a>
+
+        <a href="https://wa.me/918309800936">
+            <button class="contact-btn">WhatsApp</button>
+        </a>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<div class="section">
+    <h3>One Call for All Your Needs</h3>
+</div>
+
+<script>
+function scrollToSection(id) {
+    document.getElementById(id).scrollIntoView({
+        behavior: 'smooth'
+    });
+}
+</script>
+
+</body>
+</html>
