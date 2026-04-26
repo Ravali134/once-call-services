@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Once Call Services</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('1.jpeg') center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 45px;
+}
+
+/* BUTTONS */
+.nav-buttons button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 25px;
+    background: #ff4d4d;
+    color: white;
+    cursor: pointer;
+}
+
+/* SECTION */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* CARD */
+.card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    max-width: 900px;
+    margin: auto;
+}
+
+/* SERVICES GRID */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.services div {
+    background: #f4f4f4;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* GALLERY */
+.gallery img {
+    width: 200px;
+    margin: 10px;
+    border-radius: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+    <div>
+        <h1>Once Call Services</h1>
+        <p>One Call for All Your Needs</p>
+
+        <div class="nav-buttons">
+            <button onclick="scrollToSection('about')">About</button>
+            <button onclick="scrollToSection('services')">Services</button>
+            <button onclick="scrollToSection('why')">Why Us</button>
+            <button onclick="scrollToSection('contact')">Contact</button>
+        </div>
+    </div>
+</div>
+
+<!-- ABOUT -->
+<div id="about" class="section">
+    <div class="card">
+        <h2>About Us</h2>
+        <p>Once Call Services is a smart local service platform designed to connect people with trusted service providers quickly through one simple call.</p>
+        <p>From emergency needs to daily services, we help customers find reliable professionals without wasting time.</p>
+    </div>
+</div>
+
+<!-- SERVICES -->
+<div id="services" class="section">
+    <h2>Our Services</h2>
+
+    <div class="services">
+
+        <div>Electricians</div>
+        <div>Plumbers</div>
+        <div>Carpenters</div>
+        <div>AC Repair</div>
+        <div>Water Purifier</div>
+        <div>House Cleaning</div>
+        <div>Painting</div>
+
+        <div>Doctors & Clinics</div>
+        <div>Hospitals</div>
+        <div>Diagnostics</div>
+        <div>Ambulance</div>
+        <div>Home Nursing</div>
+
+        <div>Home Tutors</div>
+        <div>Coaching Centers</div>
+        <div>Career Guidance</div>
+
+        <div>Real Estate</div>
+        <div>Legal Services</div>
+        <div>Finance</div>
+        <div>Insurance</div>
+        <div>Digital Marketing</div>
+
+        <div>Water Supply</div>
+        <div>Grocery Delivery</div>
+        <div>Catering</div>
+        <div>Events</div>
+        <div>Travel</div>
+
+    </div>
+</div>
+
+<!-- WHY -->
+<div id="why" class="section">
+    <div class="card">
+        <h2>Why Choose Us</h2>
+        <p>✔ Trusted Local Providers</p>
+        <p>✔ Fast Response</p>
+        <p>✔ One Contact for All Services</p>
+        <p>✔ Affordable Solutions</p>
+        <p>✔ Easy WhatsApp Booking</p>
+    </div>
+</div>
+
+<!-- GALLERY -->
+<div class="section">
+    <h2>Our Work</h2>
+    <div class="gallery">
+        <img src="1.jpeg">
+        <img src="2.jpeg">
+        <img src="3.jpeg">
+        <img src="4.jpeg">
+        <img src="5.jpeg">
+    </div>
+</div>
+
+<!-- CONTACT -->
+<div id="contact" class="section">
+    <div class="card">
+        <h2>Contact Us</h2>
+        <p>📞 +91 8309800936</p>
+        <p>📍 Ramachandrapuram</p>
+        <p>📱 WhatsApp Available</p>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<div class="section">
+    <h3>Let’s Build Better Service Connections Together</h3>
+</div>
+
+<script>
+function scrollToSection(id) {
+    document.getElementById(id).scrollIntoView({
+        behavior: 'smooth'
+    });
+}
+</script>
+
+</body>
+</html>
